@@ -1,0 +1,38 @@
+.btn {
+	text-transform: uppercase;
+	background: #ab7a5f;
+	background: var(--clr-primary-5);
+	color: #eaded7;
+	color: var(--clr-primary-10);
+	padding: 0.375rem 0.75rem;
+	letter-spacing: 0.1rem;
+	letter-spacing: var(--spacing);
+	display: inline-block;
+	font-weight: 400;
+	transition: all 0.3s linear;
+	transition: var(--transition);
+	font-size: 0.875rem;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 0.25rem;
+	border-radius: var(--radius);
+	border-color: transparent;
+}
+
+.section-center {
+	padding: 50px, 20px, 50px, 20px;
+	.product-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.left-gallery {
+			height: 500px;
+			.gallery{
+				.gallery-img{
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+}
