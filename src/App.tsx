@@ -70,8 +70,6 @@ export default class App extends Component {
 
 		const { categories, products, categoryName } = this.state;
 
-
-
 		const filteredProducts =
 			categoryName === "All"
 				? products
@@ -92,7 +90,7 @@ export default class App extends Component {
 								/>
 							}
 						/>
-						<Route path="/product" element={<Product />} />
+						<Route path="/product" element={<Product products={filteredProducts} />} />
 					</Routes>
 			</BrowserRouter>
 		);
